@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cf223ee5eb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-------------------------------------------------- HOME -------------------------------------------------->
+    <!-------------------------------------------------- HOME -------------------------------------------------->
+    <!-------------------------------------------------- HOME -------------------------------------------------->
+    <div id="header">
+        <nav>
+            <img src="images/henry-nobg.png" alt="logo">
+            <ul id="menu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-regular fa-circle-xmark" onclick="hide()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="show()"></i>
+        </nav>
+        <div class="container header">
+            <div class="header-content">
+                <div class="header-text">
+                    <p>A student and an aspiring programmer</p>
+                    <h1>Hi, I'm <span>Henry</span>!<br> Nice to meet you!</h1>
+                </div>
+                <div class="header-image">
+                    <img src="images/me again.png" alt="Profile image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------------- ABOUT -------------------------------------------------->
+    <!-------------------------------------------------- ABOUT -------------------------------------------------->
+    <!-------------------------------------------------- ABOUT -------------------------------------------------->
+    <div id="about">
+        <div class="container about">
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/hehe.png" alt="Profile">
+                </div>
+                <div class="col-2">
+                    <h1 class="sub-titles">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UX/UI Design</span><br>some experience designing user interfaces and user
+                                experiences</li>
+                            <li><span>Video Editing</span><br>some experience editing and producing videos</li>
+                            <li><span>Infographic Design</span><br>some experience creating visually appealing and
+                                informative infographics</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Java - Intermediate</span><br>Ability to write programs to solve relatively basic
+                                problems, understanding of object-oriented programming concepts and how they're applied
+                                in Java, familiarity with working with libraries, and knowledge of Java 8 features</li>
+                            <li><span>HTML, CSS & JS - Basic</span><br>Familiarity with the basics of web development,
+                                including creating and styling web pages with HTML and CSS, and adding interactivity
+                                with JavaScript</li>
+                            <li><span>C - Basic</span><br>Familiarity with the basics of C programming, including syntax
+                                and data types</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2009 - 2015</span><br>Labogon Elementary School</li>
+                            <li><span>2015 - 2019</span><br>Paknaan National High School</li>
+                            <li><span>2019 - 2021</span><br>Informatics College Cebu</li>
+                            <li><span>2021 - Current</span><br>Cebu Technological University - Danao Campus</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------------- SERVICES -------------------------------------------------->
+    <!-------------------------------------------------- SERVICES -------------------------------------------------->
+    <!-------------------------------------------------- SERVICES -------------------------------------------------->
+    <div id="services">
+        <div class="container services">
+            <h1 class="sub-titles">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UX/UI Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-photo-film"></i>
+                    <h2>Video Editing</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------------- WORKS -------------------------------------------------->
+    <!-------------------------------------------------- WORKS -------------------------------------------------->
+    <!-------------------------------------------------- WORKS -------------------------------------------------->
+    <div id="works">
+        <div class="container work">
+            <div class="sub-titles">My Work</div>
+            <div class="work-list">
+                <div class="works">
+                    <img src="images/work1-sample.jpg" alt="works">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="works">
+                    <img src="images/work2-sample.jpg" alt="works">
+                    <div class="layer">
+                        <h3>Voting App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="works">
+                    <img src="images/work3-sample.jpg" alt="works">
+                    <div class="layer">
+                        <h3>Student Management App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-------------------------------------------------- CONTACT -------------------------------------------------->
+    <!-------------------------------------------------- CONTACT -------------------------------------------------->
+    <!-------------------------------------------------- CONTACT -------------------------------------------------->
+    <div id="contact">
+        <div class="container contact">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-titles">Contact Me</h1>
+                    <p><i class="fa-solid fa-phone"></i>09924399149</p>
+                    <p><i class="fa-regular fa-envelope"></i>henrym45319@gmail.com</p>
+                    <div class="socials">
+                        <a href="https://www.facebook.com/hernryyryyyyyy" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/KitJasper" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                        <a href="https://www.instagram.com/hernryyryyyyyy/" target="_blank"><i class="fa-brands fa-instagram"></i></i></i></a>
+                    </div>
+                    <div class="download">
+                        <a href="files/Resume 2023 - Mahusay, John Henry A..docx" class="btn btn3" download>Download Resume</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <textarea name="Message" id="" rows="4" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn4">SUBMIT</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-------------------------------------------------- SCRIPT -------------------------------------------------->
+<!-------------------------------------------------- SCRIPT -------------------------------------------------->
+<!-------------------------------------------------- SCRIPT -------------------------------------------------->
+<script>
+    // used to switch between tabs
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    //defined to store the elements with the classes "tab-links" and "tab-contents"
+
+    function opentab(tabname) {
+        //takes a `tabname` parameter
+        for (tablink of tablinks) {
+            //a loop is used to iterate over each element with the class "tab-links".
+            tablink.classList.remove("active-link");
+            //to remove the "active-link" class
+        }
+
+        for (tabcontent of tabcontents) {
+            //a loop is used to iterate over each element with the class "tab-contents"
+            tabcontent.classList.remove("active-tab");
+            //to remove the "active-link" class
+        }
+        event.currentTarget.classList.add("active-link");
+        //this method is called on the current tab link element to add the "active-link" class, indicating that this tab is now active
+        document.getElementById(tabname).classList.add("active-tab");
+        //method is called on the content panel element with the specified `tabname` to add the "active-tab"
+    }
+    // function is called whenever a tab link is clicked
+</script>
+<script>
+    //side menu script
+    var side = document.getElementById("menu");
+    function show(sidemenu){
+        side.style.right= "0";
+    }
+    function hide(sidemenu){
+        side.style.right= "-200px";
+    }
+</script>
+<script>
+    // Get the height of the navbar
+    const navbarHeight = document.querySelector('nav').offsetHeight;
+    // Set the margin-top of the header to be equal to the height of the navbar
+    document.getElementById('header').style.marginTop = navbarHeight + 'px';
+</script>
+<script>
+    //scroll script
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+        //adds a click event listener to all anchor elements within the navigation (nav) element
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+         /* if any of these anchor elements are clicked, the code prevents the default behavior (navigating to a new page)
+        and instead scrolls the page smoothly to the element specified by the href attribute of the clicked anchor */
+        const navbarHeight = document.querySelector('nav').offsetHeight;
+        // get the height of the navbar using `document.querySelector('nav').offsetHeight`
+        const scrollTargetY = document.querySelector(this.getAttribute('href')).getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+        //calculate the scroll position by adding the `window.pageYOffset` to the `getBoundingClientRect().top` of the scroll target, and subtracting the height of the navbar
+        window.scrollTo({
+            //use the `window.scrollTo()` method to scroll to the calculated position with a smooth scrolling effect
+            top: scrollTargetY,
+            behavior: 'smooth'
+            });
+        });
+    });
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbykUBtX07RIVN8toj_ag6gGdbZyn0X0hvC8YARcdPd2QY84gHJlel8f_6htM1BKI8jg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent!"
+            setTimeout(function() {
+                msg.innerHTML = ""
+            },1000)
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</html>
