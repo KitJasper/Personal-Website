@@ -409,12 +409,12 @@ nav .fas {
 
 /* Layer container */
 .layer {
-    color: #080808;
+    color: #ffff;
     width: 100%;
     /* Full width */
     height: 0;
     /* Full height */
-    background: linear-gradient(rgb(0, 0, 0, 0.2), #00fbff);
+    background: linear-gradient(rgb(0, 0, 0, 0.2), #006465);
     /* Gradient background */
     border-radius: 10px;
     /* Rounded corners */
